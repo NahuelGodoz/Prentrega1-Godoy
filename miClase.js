@@ -35,8 +35,10 @@ if (value == "1" ) {
         adicionalInteres = (cantidadTotal - dineroIn)
         alert('La cantidad total: ' + cantidadTotal + '\nLa cantidad de cuotas: ' + cuotas + "\nEl interes adicional: " + adicionalInteres )
        }
-    
-    else if (banco == 3){
+
+       
+    }
+    else if (value == 3){
         class InfoB{
             constructor( nombre , porcentaje , disponible){
                 this.nombre = nombre;
@@ -65,11 +67,14 @@ if (value == "1" ) {
             let infoB = new InfoB( nombre , porcentaje , disponible);
         
             listaBanco.push(infoB);
+        
         }
         
-        console.log(listaBanco);
+            console.log(listaBanco);
 
         }
+
+    else {
+        alert('Opcion invalida')
+    
     }
-
-
