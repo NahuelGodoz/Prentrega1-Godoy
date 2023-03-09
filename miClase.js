@@ -71,41 +71,5 @@ if (value == "1" ) {
 
         }
     }
-else {
-    alert('Opcion invalida')
-
-}
 
 
-
-class InfoB{
-    constructor( nombre , porcentaje , disponible){
-        this.nombre = nombre;
-        this.porcentaje = porcentaje;
-        this.disponible = disponible;
-    }
-
-
-    get_datos(){                     
-        console.log("Nombre: ", this.nombre);
-        console.log("Precio: ", this.porcentaje);
-        console.log("disponible: ", this.disponible);
-        console.log("");
-    }
-}
-// lista de bancos 
-let listaBanco = [];
-
-
-for( let i = 0 ; i < 2 ; i = i + 1){
-
-    let nombre = prompt("Ingrese el nombre del banco a agregar");
-    let porcentaje = prompt("Ingrese el porcentaje de interes");
-    let disponible = prompt("Ingrese si esta disponible");
-
-    let infoB = new InfoB( nombre , porcentaje , disponible);
-
-    listaBanco.push(infoB);
-}
-
-console.log(listaBanco);
